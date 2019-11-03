@@ -1,25 +1,82 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Awards</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
-  <!-- Menu Bar -->
-  <div class="menuBar">
-    <a href="index.html">Home</a>
-    <a href="movies.html">Films</a>
-    <a href="actors.html">Actors</a>
-    <a href="directors.html">Directors</a>
-    <a class="active" href="awards.html">Awards</a>
-  </div>
-
+ <!-- Menu Bar -->
+<div class="menuBar">
+  <a href="index.html">Home</a>
+  <a class="active" href="movies.html">Films</a>
+  <a href="actors.html">Actors</a>
+  <a href="directors.html">Directors</a>
+  <a href="awards.html">Awards</a>
+</div>
   <!-- Main Content -->
-
-  <div class="main">
-    <form action="submitAward.html">
+  <div class="box">
+   Awards Data
+    <input class="dataBtn" type="button" value="Edit">
+    <input class="dataBtn" type="button" value="Delete">
+   <table class="display">
+	<tbody>
+		<tr class="rdisplay">
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+			<tr class="rdisplay">
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+			<tr class="rdisplay">
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+			<tr class="rdisplay">
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+			<tr class="rdisplay">
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+			<tr class="rdisplay">
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+    <tr class="rdisplay">
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+    <tr class="rdisplay">
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody>
+</table>
+   </div>
+   
+ <div class="box">
+   <center>
+   Search:
+   <input type="text" name="title">
+     <input type="button" value="Search">
+   </center>
+   </div>
+   
+   <div class="box">
+     Add an Awards
+  <form action="submitAward.html">
       <table>
         <tr>
           <td>
@@ -42,8 +99,11 @@
             <input type="submit" value="Submit">
           </td>
         </tr>
+         </table>
     </form>
-    Awards:
+    </div>
+     <div class="box">
+            Awards:
     <ul>
       <li>Award:
         <a>Name:</a>
@@ -53,8 +113,5 @@
         <a>Actor:</a>
       </li>
     </ul>
-  </div>
-
+        </div>
 </body>
-
-</html>
