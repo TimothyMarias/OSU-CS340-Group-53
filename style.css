@@ -26,32 +26,49 @@ body {
   color: #2c2f33;
 }
   
-.main {
+.box {
   width: 90%;
   margin-top: 15px;
   margin-left: 4%;
   background-color: #d3d3d3;
   padding: 15px;
-  height: 400px;
   border-radius: 15px;
 }
 
 td { 
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-input[type=submit] {
+input[type=submit], input[type=button] {
   background-color: #1b85b8;
   border: none;
   border-radius: 10px;
   color: white;
-  padding: 10px;
+  padding: 8px;
   text-decoration: none;
   margin: 4px;
   cursor: pointer;
 }
 
-
 input[type=submit]:hover {
   background-color: #d3d3d3;
+}
+
+.display {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.rdisplay {
+  border: 1px solid #dddddd;
+  text-align: left;
+  height: 25px;
+  padding: 8px;
+  background-color: white;
+}
+
+.dataBtn {
+  float: right;
 }
