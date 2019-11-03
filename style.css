@@ -30,4 +30,7 @@ body {
   width: 90%;
   margin-top: 15px;
   margin-left: 5%;
+  background-color: #d3d3d3;
+  padding: 15px;
+  height: 400px;
 }
