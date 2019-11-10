@@ -1,6 +1,6 @@
 -- Group 53 Film Database
--- I was trying to import the database into PHPmyadmin and it kept giving me an error. So I 
---- downloaded one of the example files and slowly made changes while I tested it in PHPmyadmin. 
+-- I was trying to import the database into PHPmyadmin and it wasn't running. I had
+--- downloaded one of the example files, so I slowly made changes while I tested it in PHPmyadmin. 
 ---  This isn't done. I do think we should use the top ten movies of the last five years, otherwise
 ---  we will have no award winners at all. 
 
