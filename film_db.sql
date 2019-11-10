@@ -1,4 +1,8 @@
 -- Group 53 Film Database
+-- I was trying to import the database into PHPmyadmin and it kept giving me an error. So I 
+--- downloaded one of the example files and slowly made changes while I tested it in PHPmyadmin. 
+---  This isn't done. I do think we should use the top ten movies of the last five years, otherwise
+---  we will have no award winners at all. 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
