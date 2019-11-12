@@ -68,31 +68,31 @@ INSERT INTO `academy_award` VALUES (1,'Best Picture'),(2,'Best Director'),(3,'Be
 UNLOCK TABLES;
 
 --
--- Table structure for table `film_people`
+-- Table structure for table `people_film`
 --
 
-DROP TABLE IF EXISTS `film_people`;
+DROP TABLE IF EXISTS `people_film`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `film_people` (
+CREATE TABLE `people_film` (
   `people_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `role` varchar(255) DEFAULT NULL,
   `movie` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `movie` (`movie`),
-  CONSTRAINT `film_people_ibfk_1` FOREIGN KEY (`movie`) REFERENCES `film_movies` (`title`) ON DELETE SET NULL ON UPDATE CASCADE
+  CONSTRAINT `people_film_ibfk_1` FOREIGN KEY (`movie`) REFERENCES `film_movies` (`title`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `film_people`
+-- Dumping data for table `people_film`
 --
 
-LOCK TABLES `film_people` WRITE;
-/*!40000 ALTER TABLE `film_people` DISABLE KEYS */;
-INSERT INTO `film_people` VALUES (1,'Vin Diesel','Actor', 'Fast'),(2,'Harrison Ford','Actor','Star Wars: Episode VII – The Force Awakens'),(3,'Rami Malek', 'Actor','Bohemian Rhapsody'), (4,'Chris Pratt', 'Actor','Jurassic World');
-/*!40000 ALTER TABLE `film_people` ENABLE KEYS */;
+LOCK TABLES `people_film` WRITE;
+/*!40000 ALTER TABLE `people_film` DISABLE KEYS */;
+INSERT INTO `people_film` VALUES (1,'Vin Diesel','Actor', 'Fast'),(2,'Harrison Ford','Actor','Star Wars: Episode VII – The Force Awakens'),(3,'Rami Malek', 'Actor','Bohemian Rhapsody'), (4,'Chris Pratt', 'Actor','Jurassic World');
+/*!40000 ALTER TABLE `people_film` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
