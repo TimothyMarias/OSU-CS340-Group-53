@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `film_movies`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `film_movies` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `film_id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `box_office` bigint(20) DEFAULT NULL,
   `genre` varchar(255) DEFAULT NULL,
@@ -51,7 +51,7 @@ DROP TABLE IF EXISTS `academy_award`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `academy_award` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `award_id` int(11) NOT NULL AUTO_INCREMENT,
   `movies` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
@@ -75,7 +75,7 @@ DROP TABLE IF EXISTS `film_people`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `film_people` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `people_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `role` varchar(255) DEFAULT NULL,
   `movie` varchar(255) DEFAULT NULL,
