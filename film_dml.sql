@@ -1,24 +1,27 @@
 -- In final product all variables will have $ in front of them
 
---- Insert --- 
+-- Insert --
   -- Film Info - the actual blockbuster movie
-INSERT INTO `film_movie` (`film_id`, `title`, `box_office`, `genre`, `release_year`) VALUES (NULL, 'Citizen Kane', '839727', 'drama', '1941');
+INSERT INTO film_movie (NULL, title, box_office, genre, release_year) 
+VALUES (NULL, :title_input, :box_office_input, :genre_input, :year_input);
 
-  -- People - actors, actresses and directors
-INSERT INTO `people_film` (`people_id`, `name`, `role`, `movie`) VALUES (NULL, 'Charlie Chaplin', 'actor', 'The Tramp');
+-- People - actors, actresses and directors
+INSERT INTO people_film (people_id, name, role, movie) 
+VALUES (NULL, :name_input, :role_input, :title_input);
 
---- Update --- 
-UPDATE `film_movie` SET `title` = 'The Matrix', `box_office` = '465327069' WHERE `film_movie`.`film_id` = 1; 
+-- Update --- 
+UPDATE film_movie SET title = :title_input, box_office = :box_office_input 
+WHERE film_movie.film_id = :film_id_input; 
 
-UPDATE `people_film` SET `role` = 'director', `movie` = 'The Matrix' WHERE `order`.`people_id` = 3; 
+UPDATE people_film SET role = :role_input, movie = :title_input
+WHERE people_film.people_id = :people_id_input; 
 
--- Search
-SELECT * FROM `film_movie` WHERE `title` LIKE 'The Wizard of Oz' 
-SELECT * FROM `people_film` WHERE `name` LIKE 'Meryl Streep' 
-SELECT * FROM `film_movie` WHERE `film_id` = 3;
-
+-- Search ---
+SELECT * FROM film_movie WHERE title LIKE :title_input;
+SELECT * FROM people_film WHERE name LIKE :name_input; 
+SELECT * FROM film_movie WHERE film_id = :film_id_input;
 
 -- DELETE --
-DELETE FROM `film_movie` WHERE `film_movie`.`box_office` = '$box_offic';
-DELETE FROM `people_film` WHERE `people_film`.`people_id` = 2;
-DELETE FROM `academy_award_film` WHERE `aaid` = 2;
+DELETE FROM film_movie WHERE film_movie.box_office = :box_office_input;
+DELETE FROM people_film WHERE people_film.people_id = :people_film_id;
+DELETE FROM academy_award_film WHERE aaid = :aaid_input;
