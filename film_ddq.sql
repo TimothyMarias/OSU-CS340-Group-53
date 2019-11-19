@@ -123,6 +123,15 @@ INSERT INTO `academy_award_film` VALUES (3,4),(4,2),(4,3);
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
+DROP TABLE IF EXISTS 'movie_director';
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE 'movie_director'(
+  'director_id' INT(11) NOT NULL AUTO_INCREMENT,
+  'director_name' VARCHAR (255) NOT NULL,
+  'age' INT(11),
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+
 
 
 -- Dump completed on 2013-02-04 12:54:40
