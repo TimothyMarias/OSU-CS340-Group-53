@@ -41,36 +41,6 @@
           <td> </td>
           <td> </td>
         </tr>
-        <tr class="rdisplay">
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr class="rdisplay">
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr class="rdisplay">
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr class="rdisplay">
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-        </tr>
-        <tr class="rdisplay">
-          <td> </td>
-          <td> </td>
-          <td> </td>
-          <td> </td>
-        </tr>
       </tbody>
     </table>
   </div>
@@ -85,16 +55,20 @@
 
   <div class="box">
     Add a Film
-    <form action="submitFilm.html">
+    <form id="addMovie" action="/movie" method="post">
       <table>
         <tr>
           <td>
-            Name:
+            Title:
             <input type="text" name="title">
           </td>
           <td>
             Year Released:
-            <input type="text" name="year" maxlength="4" size="5">
+            <input type="number" name="year" maxlength="4" size="5">
+          </td>
+					<td>
+            Box Office:
+            <input type="number" name="box_office">
           </td>
           <td>
             Director:
@@ -104,6 +78,10 @@
             Top Billed Actor:
             <input type="text" name="actor">
           </td>
+					<td>
+            Genre:
+            <input type="text" name="genre">
+          </td>
           <td>
             <input type="submit" value="Submit">
           </td>
@@ -111,6 +89,7 @@
       </table>
     </form>
   </div>
+  
   <div class="box">
     Films:
     <ul>
@@ -118,8 +97,8 @@
         <a>Title:</a>
         <a>Release Date:</a>
         <a>Director:</a>
-        <a>Awards:</a>
-        <a>Cast:</a>
+        <a>Actor:</a>
+        <a>Genre:</a>
       </li>
     </ul>
   </div>
