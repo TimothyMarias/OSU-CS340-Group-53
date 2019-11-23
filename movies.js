@@ -1,7 +1,7 @@
 module.exports = function(){
     var express = require('express');
     var router = express.Router();
-
+	console.log("movie.js ran");
     function getMovie(res, mysql, context, id, complete){
         var sql = "SELECT film_id as id, title, box_office, genre, release_year, actor, director";
         var inserts = [id];
