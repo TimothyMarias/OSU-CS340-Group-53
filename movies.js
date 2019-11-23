@@ -20,7 +20,7 @@ module.exports = function(){
     router.get('/', function(req, res){
         var callbackCount = 0;
         var context = {};
-        context.javascripts = ["deleteMovie.js","filterMovie.js","searchMovie.js"];
+        context.jsscripts = ["deleteMovie.js","filterMovie.js","searchMovie.js"];
         var mysql = req.app.get('mysql');
         getMovie(res, mysql, context, complete);
         function complete(){
@@ -37,7 +37,7 @@ module.exports = function(){
     router.get('/search/:s', function(req, res){
         var callbackCount = 0;
         var context = {};
-        context.javascripts = ["deleteMovie.js","filterMovie.js","searchMovie.js"];
+        context.jsscripts = ["deleteMovie.js","filterMovie.js","searchMovie.js"];
         var mysql = req.app.get('mysql');
         getMovieWithTitle(req, res, mysql, context, complete);
         function complete(){
@@ -53,7 +53,7 @@ module.exports = function(){
     router.get('/:id', function(req, res){
         callbackCount = 0;
         var context = {};
-        context.javascripts = ["updateMovie.js"];
+        context.jsscripts = ["updateMovie.js"];
         var mysql = req.app.get('mysql');
         getMovie(res, mysql, context, req.params.id, complete);
         function complete(){
