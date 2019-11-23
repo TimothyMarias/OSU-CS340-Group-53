@@ -1,5 +1,5 @@
 var exp = require('exp');
-var mysql = require('./dbcon.js');
+//var mysql = require('./dbcon.js');
 var parser = require('body-parser');
 
 var app = exp();
