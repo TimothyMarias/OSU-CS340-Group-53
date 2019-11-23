@@ -1,7 +1,7 @@
 var exp = require('exp');
 var mysql = require('./dbcon.js');
 var parser = require('body-parser');
-
+console.log("main ran");
 var app = exp();
 var handlebars = require('exp-handlebars').create({
         defaultLayout:'main',
