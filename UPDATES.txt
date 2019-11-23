@@ -1,0 +1,3 @@
+I got a good chunk of code added for handlebars and all that to make the site responde to submited data. 
+I am not as framiliar with Handlebars as I would like to be. Using the example in the assignment helped some. 
+Feel free to edit/delete/whatever. Or if you think a different approach is better, go for it. 
