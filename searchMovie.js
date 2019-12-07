@@ -1,4 +1,4 @@
-getMovieWithTitle(req, res, mysql, context, complete)
+function getMovieWithTitle(req, res, mysql, context, complete)
 {
     var inserts = [req.body.search];
     var sql = 'SELECT title FROM film WHERE title LIKE %' + inserts + '%';
@@ -7,7 +7,12 @@ getMovieWithTitle(req, res, mysql, context, complete)
             res.write(JSON.stringify(error));
             res.end();
         }
-        context.search = results;
+        var data =[];
+        for ( i=0; i <rows.length; i++)
+        {
+            data.push(rows[i].title);
+        }
+        res.send(JSON.stringify(data));
         complete();
     });
 }
