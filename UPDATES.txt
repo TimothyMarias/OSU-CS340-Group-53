@@ -7,3 +7,8 @@ but I couldn't make it work. I did for the example and host it on my account to 
 the readme loads. Link: https://kurtkaiser.github.io/
 
 Yeah, so feel free to tinker or try something completely different.
+
+
+I am in the process of getting the various funcitons to work. The movies.js file is set up where it references other files which I am making now
+however some of the functions which are made to be referenced in the files are also defined in movies.js. I will make a backup in case we want to 
+keep this the same but I will move the definitions to the js files referenced.
