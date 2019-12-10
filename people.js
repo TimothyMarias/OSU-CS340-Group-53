@@ -3,7 +3,7 @@ module.exports = function(){
     var router = express.Router();
 
     function getPeople(res, mysql, context, complete){
-        mysql.pool.query("SELECT film.people_id as id, name, people.name AS name, people.role AS role, people.movie AS movie, function(error, results, fields){
+        mysql.pool.query("SELECT film.people_id as id, name, people.name AS name, people.role AS role, people.movie AS movie", function(error, results, fields){
             if(error){
                 res.write(JSON.stringify(error));
                 res.end();

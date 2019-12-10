@@ -5,7 +5,7 @@ console.log("json ran");
   "description": "Moviedatabase with node.js",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
   },
   "author": "Kurt Kaiser and Timothy Marias",
   "dependencies": {
@@ -13,6 +13,6 @@ console.log("json ran");
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.17.0",
-    "mysql": "^5.2.0"
+    "mysql": "^5.2.0",
   }
 }
