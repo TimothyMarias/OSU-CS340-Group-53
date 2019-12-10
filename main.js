@@ -11,9 +11,10 @@ app.engine('handlebars', handlebars.engine);
 app.use(parser.urlencoded({extended:true}));
 app.use('/static', exp.static('public'));
 app.set('view engine', 'handlebars');
+app.set('port', process.argv[2]);
 app.set('mysql', mysql);
-//
 app.use('/movies', require('./movies.js'));
+app.use('/people', require('./people.js'));
 app.use('/', exp.static('public'));
 
 app.use(function(request, response, next, error){
