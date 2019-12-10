@@ -15,6 +15,10 @@ app.set('port', process.argv[2]);
 app.set('mysql', mysql);
 app.use('/movies', require('./movies.js'));
 app.use('/people', require('./people.js'));
+app.use('/people_awards', require('./people_awards.js'));
+app.use('/search', require('./searchMovie.js'));
+app.use('/update', require('./updateMovie.js'));
+app.use('/post', require('./post.js'));
 app.use('/', exp.static('public'));
 
 app.use(function(request, response, next, error){
