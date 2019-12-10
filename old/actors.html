@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Actors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Menu Bar -->
+  <div class="menuBar">
+    <a href="index.html">Home</a>
+    <a href="movies.html">Films</a>
+    <a class="active" href="actors.html">Actors</a>
+    <a href="directors.html">Directors</a>
+    <a href="awards.html">Awards</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="box">
+    Actor Data
+    <input class="dataBtn" type="button" value="Edit">
+    <input class="dataBtn" type="button" value="Delete">
+    <table class="display">
+      <tbody>
+        <tr class="rdisplay">
+          <th> Name </th>
+          <th> Film </th>
+          <th> </th>
+          <th> </th>
+        </tr>
+        <tr class="rdisplay">
+          <td> Vin Diesel </td>
+          <td> Furious 7</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> Harrison Ford </td>
+          <td> The Force Awakens </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> Rami Malek </td>
+          <td> Bohemian Rhapsody </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+   <div class="box">
+    <center>
+    <form id='searchPeople' action='' method=''>
+      Search:
+      <input type="text" name="peopleSearchBox" id="peopleSearchText">
+      <input type="button" value="Search" onclick="searchPeopleByName()">
+      </form>
+    </center>
+  </div>
+
+  <div class="box">
+    Add an Actor
+    <form action="submitFilm.html">
+      <table>
+        <tr>
+          <td>
+            Name:
+            <input type="text" name="name">
+          </td>
+          <td>
+            Age:
+            <input type="text" name="age" maxlength="3" size="4">
+          </td>
+          <td>
+            Films:
+            <input type="text" name="films">
+          </td>
+          <td>
+            Awards:
+            <input type="text" name="awards">
+          </td>
+          <td>
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div class="box">
+    Actor:
+     <ul>
+        <a>Name:</a>
+        <a>Age:</a>
+        <a>Films:</a>
+        <a>Awards:</a>
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+</html>

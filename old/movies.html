@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Director</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Menu Bar -->
+  <div class="menuBar">
+    <a href="index.html">Home</a>
+    <a class="active" href="movies.html">Films</a>
+    <a href="actors.html">Actors</a>
+    <a href="directors.html">Directors</a>
+    <a href="awards.html">Awards</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="box">
+    Film Data
+    <input class="dataBtn" type="button" value="Edit">
+    <input class="dataBtn" type="button" value="Delete">
+    <table class="display">
+      <tbody>
+	<tr class="rdisplay">
+          <th> Title </th>
+	  <th> Year </th>
+          <th> Box Office </th>
+          <th> Genre </th>
+        </tr>
+        <tr class="rdisplay">
+          <td> The Force Awakens </td>
+	  <td> 2015 </td>
+          <td> 2068223624 </td>
+          <td> Science-Fiction </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> Jurassic World </td>
+          <td> 2015 </td>
+          <td> 1671713208 </td>
+          <td> Science-Fiction </td>
+        </tr>
+	<tr class="rdisplay">
+          <td> Furious 7</td>
+          <td> 2015 </td>
+          <td> 1516045911 </td>
+          <td> Action </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box">
+    <center>
+      Search:
+      <input type="text" name="title">
+      <input type="button" value="Search">
+    </center>
+  </div>
+
+  <div class="box">
+    Add a Film
+    <form id="addMovie" action="/movie" method="post">
+      <table>
+        <tr>
+          <td>
+            Title:
+            <input type="text" name="title">
+          </td>
+          <td>
+            Year Released:
+            <input type="number" name="year" maxlength="4" size="5">
+          </td>
+					<td>
+            Box Office:
+            <input type="number" name="box_office">
+          </td>
+          <td>
+            Director:
+            <input type="text" name="director">
+          </td>
+          <td>
+            Top Billed Actor:
+            <input type="text" name="actor">
+          </td>
+					<td>
+            Genre:
+            <input type="text" name="genre">
+          </td>
+          <td>
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  
+  <div class="box">
+    Films:
+    <ul>
+      <li>Film:
+        <a>Title:</a>
+        <a>Release Date:</a>
+        <a>Director:</a>
+        <a>Actor:</a>
+        <a>Genre:</a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Director</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Menu Bar -->
+  <div class="menuBar">
+    <a href="index.html">Home</a>
+    <a href="movies.html">Films</a>
+    <a href="actors.html">Actors</a>
+    <a href="directors.html">Directors</a>
+    <a class="active" href="awards.html">Awards</a>
+  </div>
+  <!-- Main Content -->
+  <div class="box">
+    Awards Data
+    <input class="dataBtn" type="button" value="Edit">
+    <input class="dataBtn" type="button" value="Delete">
+    <table class="display">
+      <tbody>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="rdisplay">
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box">
+    <center>
+      Search:
+      <input type="text" name="title">
+      <input type="button" value="Search">
+    </center>
+  </div>
+
+  <div class="box">
+    Add an Award
+    <form action="submitAward.html">
+      <table>
+        <tr>
+          <td>
+            Name:
+            <input type="text" name="name">
+          </td>
+          <td>
+            Year:
+            <input type="text" name="year" maxlength="4" size="5">
+          </td>
+          <td>
+            Film:
+            <input type="text" name="film">
+          </td>
+          <td>
+            Winner(s):
+            <input type="text" name="winner">
+          </td>
+          <td>
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <div class="box">
+    Awards:
+    <ul>
+      <li>Award:
+        <a>Name:</a>
+        <a>Year:</a>
+        <a>Film:</a>
+        <a>Director:</a>
+        <a>Actor:</a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
